@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<script type="text/javascript" src="js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="js/animationRecorder.js"></script>
 	<style type="text/css">
 		#svg {
 			width: 100%;
@@ -10,6 +11,11 @@
 	</style>
 </head>
 <body>
+	<div id="controls"> 
+		<button onclick="AnimationRecorder.record(null);">Record</button>
+		<button onclick="AnimationRecorder.stopRecording();">Stop</button>
+		<button>Playback</button>
+	</div>
 	<svg id="svg">
 
 	</svg>
